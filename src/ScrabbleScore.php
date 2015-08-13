@@ -36,12 +36,15 @@
             $input_letters = str_split($input_word);
             $score = 0;
 
-            foreach($input_letters as $letter) {
-                $letter_score = $letter_values[$letter];
-                $score = $score + $letter_score;
+            if(empty($input_word)) {
+                return 0;
+            } else {
+                foreach($input_letters as $letter) {
+                    $score += $letter_values[$letter];
+                }
+                return $score;
             }
 
-            return $score;
         }
     }
 

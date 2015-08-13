@@ -44,6 +44,17 @@
 
             $this->assertEquals(10, $result);
         }
+
+        function test_getScore_fiveLetterWord()
+        {
+            $test_ScrabbleScore = new ScrabbleScore;
+            $input_word = "zebra";
+
+            $result = $test_ScrabbleScore->getScore($input_word);
+
+            $this->assertEquals(16, $result);
+
+        }
     }
 
  ?>

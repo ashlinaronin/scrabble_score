@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+        <title>Scores for Days!!</title>
+    </head>
+    <body>
+        <div class="container">
+            {% if score != -1 %}
+                <h3> Your score is: {{ score }} </h3>
+            {% else %}
+                <h3> Invalid word...please try again</h3>
+            {% endif %}
+            <a href="/"><button type="submit" class="btn btn-success">Home</button></a>
+        </div>
+    </body>
+</html>

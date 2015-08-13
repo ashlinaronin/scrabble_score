@@ -9,7 +9,7 @@
             <form action="/score" method="get">
                 <div class="form-group">
                     <label for="word">Word:</label>
-                    <input name="word" id="word" type="text" class="form-control">
+                    <input name="word" id="word" type="text" class="form-control" required pattern="[a-zA-Z]+" />
                 </div>
                 <button type="submit" class="btn btn-success">Submit</button>
             </form>

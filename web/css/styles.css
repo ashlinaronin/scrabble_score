@@ -1,5 +1,7 @@
 body {
     background-image: url(../img/scrambled-eggs.jpg);
+    font-family: serif, sans-serif;
+
 }
 
 h3 {
@@ -15,5 +17,5 @@ h3 {
 }
 
 .chicken {
-    text-shadow: 1px 1px 3px black; 
+    text-shadow: 1px 1px 3px black;
 }

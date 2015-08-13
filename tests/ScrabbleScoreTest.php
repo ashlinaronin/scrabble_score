@@ -98,6 +98,19 @@
             //Assert
             $this->assertEquals(-1, $result);
         }
+
+        function test_getScore_wordNumbers()
+        {
+            //Arrange
+            $test_ScrabbleScore = new ScrabbleScore;
+            $input_word = "l33t";
+
+            //Act
+            $result = $test_ScrabbleScore->getScore($input_word);
+
+            //Assert
+            $this->assertEquals(-1, $result);
+        }
     }
 
  ?>

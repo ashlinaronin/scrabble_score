@@ -138,7 +138,7 @@
             $this->assertEquals(-1, $result);
         }
 
-        function test_getScore_lowerCaseWords()
+        function test_getScore_mixCaseWords()
         {
             //Arrange
             $test_ScrabbleScore = new ScrabbleScore;

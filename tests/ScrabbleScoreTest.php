@@ -124,6 +124,19 @@
             //Assert
             $this->assertEquals(-1, $result);
         }
+
+        function test_getScore_twoWords()
+        {
+            //Arrange
+            $test_ScrabbleScore = new ScrabbleScore;
+            $input_word = "two words";
+
+            //Act
+            $result = $test_ScrabbleScore->getScore($input_word);
+
+            //Assert
+            $this->assertEquals(-1, $result);
+        }
     }
 
  ?>

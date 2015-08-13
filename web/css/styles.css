@@ -4,6 +4,12 @@ body {
 
 h3 {
     color:#fff;
-    text-shadow: 1px 1px 3px black; 
+    text-shadow: 1px 1px 3px black;
+
+}
+
+.text-danger {
+    color:#ff4e50;
+    text-shadow: 1px 1px 3px black;
 
 }

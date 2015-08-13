@@ -1,14 +1,15 @@
 <html>
     <head>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='css/styles.css'>
         <title>Enter a Scrabble word</title>
     </head>
     <body>
         <div class="container">
-            <h3 class="text-muted">Enter a single word to get its scrabble score.</h3>
-            <form action="/score" method="get" class="form-horizontal">
+            <h3>Enter a single word to get its scramble score.</h3>
+            <form action="/score" method="get">
                 <div class="form-group">
-                    <label for="word">Word:</label>
+                    <label class="text-danger" for="word">Word:</label>
                     <input name="word" id="word" type="text" class="form-control" required pattern="[a-zA-Z]+" />
                 </div>
                     <button type="submit" class="btn btn-success">Submit</button>

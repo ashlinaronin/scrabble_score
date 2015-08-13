@@ -14,6 +14,16 @@
 
             $this->assertEquals(1, $result);
         }
+
+        function test_getScore_twoLetterWord()
+        {
+            $test_ScrabbleScore = new ScrabbleScore;
+            $input_word = "as";
+
+            $result = $test_ScrabbleScore->getScore($input_word);
+
+            $this->assertEquals(2, $result);
+        }
     }
 
  ?>

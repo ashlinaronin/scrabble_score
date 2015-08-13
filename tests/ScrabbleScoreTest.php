@@ -65,6 +65,16 @@
 
             $this->assertEquals(18, $result);
         }
+
+        function test_getScore_alphabetWord()
+        {
+            $test_ScrabbleScore = new ScrabbleScore;
+            $input_word = "abcdefghijklmnopqrstuvwxyz";
+
+            $result = $test_ScrabbleScore->getScore($input_word);
+
+            $this->assertEquals(87, $result);
+        }
     }
 
  ?>

@@ -75,6 +75,16 @@
 
             $this->assertEquals(87, $result);
         }
+
+        function test_getScore_noWord()
+        {
+            $test_ScrabbleScore = new ScrabbleScore;
+            $input_word = "";
+
+            $result = $test_ScrabbleScore->getScore($input_word);
+
+            $this->assertEquals(0, $result);
+        }
     }
 
  ?>

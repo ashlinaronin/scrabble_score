@@ -16,7 +16,16 @@
                 's' => 1,
                 't' => 1
             );
-            return $letter_values['a'];
+
+            $input_letters = str_split($input_word);
+            $score = 0;
+
+            foreach($input_letters as $letter) {
+                $letter_score = $letter_values[$letter];
+                $score = $score + $letter_score;
+            }
+
+            return $score;
         }
     }
 

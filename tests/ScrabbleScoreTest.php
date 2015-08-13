@@ -83,7 +83,7 @@
 
             $result = $test_ScrabbleScore->getScore($input_word);
 
-            $this->assertEquals(0, $result);
+            $this->assertEquals(-1, $result);
         }
 
         function test_getScore_numbers()

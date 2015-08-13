@@ -36,13 +36,16 @@
             $input_letters = str_split($input_word);
             $score = 0;
 
-            if(empty($input_word)) {
-                return 0;
-            } else {
+
+            /* If the input word is not empty and only consists of alphabetic
+               characters, calculate and return score. Otherwise return error -1. */
+            if(!empty($input_word) && ctype_alpha($input_word)) {
                 foreach($input_letters as $letter) {
                     $score += $letter_values[$letter];
                 }
                 return $score;
+            } else {
+                return -1;
             }
 
         }

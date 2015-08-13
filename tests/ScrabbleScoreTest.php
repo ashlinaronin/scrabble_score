@@ -34,6 +34,16 @@
 
             $this->assertEquals(5, $result);
         }
+
+        function test_getScore_fourLetterWord()
+        {
+            $test_ScrabbleScore = new ScrabbleScore;
+            $input_word = "camp";
+
+            $result = $test_ScrabbleScore->getScore($input_word);
+
+            $this->assertEquals(10, $result);
+        }
     }
 
  ?>

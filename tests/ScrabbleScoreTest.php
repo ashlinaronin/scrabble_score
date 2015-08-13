@@ -55,6 +55,16 @@
             $this->assertEquals(16, $result);
 
         }
+
+        function test_getScore_sixLetterWord()
+        {
+            $test_ScrabbleScore = new ScrabbleScore;
+            $input_word = "jalopy";
+
+            $result = $test_ScrabbleScore->getScore($input_word);
+
+            $this->assertEquals(18, $result);
+        }
     }
 
  ?>

@@ -4,6 +4,8 @@
     {
         function getScore($input_word)
         {
+            /*Created an associative array with letter keys and score values to
+            easily access letter scores.*/
             $letter_values = array(
                 'a' => 1,
                 'e' => 1,
@@ -33,6 +35,7 @@
                 'z' => 10
             );
 
+            //Converts an input word to an array of lowercase letters
             $input_letters = str_split(strtolower($input_word));
             $score = 0;
 

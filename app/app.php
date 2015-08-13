@@ -9,6 +9,9 @@
     ));
 
     //Routes here
+    $app->get("/", function() use ($app) {
+        return $app['twig']->render('scrabble_score.html.twig');
+    });
 
     return $app;
 ?>

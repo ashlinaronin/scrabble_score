@@ -33,7 +33,7 @@
                 'z' => 10
             );
 
-            $input_letters = str_split($input_word);
+            $input_letters = str_split(strtolower($input_word));
             $score = 0;
 
 

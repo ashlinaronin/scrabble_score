@@ -14,7 +14,9 @@
                 'n' => 1,
                 'r' => 1,
                 's' => 1,
-                't' => 1
+                't' => 1,
+                'd' => 2,
+                'g' => 2,
             );
 
             $input_letters = str_split($input_word);

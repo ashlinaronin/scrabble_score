@@ -32,7 +32,7 @@
 
             $result = $test_ScrabbleScore->getScore($input_word);
 
-            $this->assertEquals(3, $result);
+            $this->assertEquals(5, $result);
         }
     }
 

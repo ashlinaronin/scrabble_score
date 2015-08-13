@@ -137,6 +137,19 @@
             //Assert
             $this->assertEquals(-1, $result);
         }
+
+        function test_getScore_lowerCaseWords()
+        {
+            //Arrange
+            $test_ScrabbleScore = new ScrabbleScore;
+            $input_word = "abcdEfghijklMnopQrsTuvwxyz";
+
+            //Act
+            $result = $test_ScrabbleScore->getScore($input_word);
+
+            //Assert
+            $this->assertEquals(87, $result);
+        }
     }
 
  ?>
